@@ -49,7 +49,10 @@ selected_exp = st.slider("💼 Experience in Years", 1, 50, value=5)
 st.divider()
 
 # Load model
-with open('saved_model.pk1', 'rb') as file:
+
+
+import urllib.request
+with urllib.request.urlopen('https://github.com/srk553/machine-learning-project/blob/main/saved_model.pk1','rb') as file:
     data = pickle.load(file)
 
 regressor_loaded = data["model"]
