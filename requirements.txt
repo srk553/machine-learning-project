@@ -1,4 +1,4 @@
 streamlit
 numpy
 urllib3
-sklearn
+scikit-learn
