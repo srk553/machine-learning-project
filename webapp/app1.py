@@ -24,6 +24,7 @@ st.markdown("""
 
 st.markdown("<h1 class='main-title'>SRK Masterstack</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtext'>Based on experience, education, and country, the application makes salary predictions.</p>", unsafe_allow_html=True)
+st.markdown("<p class='subtext'><em>Trained on Stack Overflow 2024 survey data.</em></p>", unsafe_allow_html=True)
 
 st.divider()
 
