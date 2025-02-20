@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
+
 # Set page title and layout
 st.set_page_config(page_title="SRK Masterstack - Salary Predictor", page_icon="💰", layout="centered")
 
