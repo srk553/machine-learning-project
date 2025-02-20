@@ -49,11 +49,13 @@ selected_exp = st.slider("💼 Experience in Years", 1, 50, value=5)
 st.divider()
 
 # Load model
+import requests
+from io import BytesIO
 
-
-import urllib.request
-with urllib.request.urlopen('https://github.com/srk553/machine-learning-project/blob/main/saved_model.pk1','rb') as file:
-    data = pickle.load(file)
+url = 'https://github.com/srk553/machine-learning-project/blob/main/saved_model.pk1'
+response = requests.get(url)
+file = BytesIO(response.content)
+data = pickle.load(file)
 
 regressor_loaded = data["model"]
 le_country = data["le_country"]
