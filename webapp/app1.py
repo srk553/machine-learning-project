@@ -52,7 +52,7 @@ st.divider()
 import requests
 from io import BytesIO
 
-url = 'https://github.com/srk553/machine-learning-project/blob/main/saved_model.pk1'
+url = 'https://raw.githubusercontent.com/srk553/machine-learning-project/main/saved_model.pk1'
 response = requests.get(url)
 file = BytesIO(response.content)
 data = pickle.load(file)
